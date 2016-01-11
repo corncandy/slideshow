@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Responsive Web Design</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+    if (window.location.search.match(/print-pdf/gi)) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    }
+    </script>
+
+    <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h2>Responsive Web Design</h2>
+                <p>
+                    <small><a href="mailto:muyunsong@qbao.com">Cloud Mu</a> / <a href="http://qbao.com">@QBao UED</a>
+                    </small>
+                </p>
+            </section>
+
+            <section>
+                <h2>Agenda</h2>
+                <ul>
+                    <li>Introduction</li>
+                    <li>Design Principles</li>
+                    <li>Design Patterns</li>
+                    <li>Technique</li>
+                    <li>Framework</li>
+                </ul>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Introduction</h2>
+                </section>
+                <section data-background="images/rwd-origin.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-adapt.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-internet-user.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-screen-size.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-defination.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-example1.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-example2.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-example3.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-principles.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-fluid-grid.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-flexible-images.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-media-query1.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-media-query2.jpg" data-background-size="100% auto">
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Design Principles</h2>
+                </section>
+                <section data-background="images/rwd-mobile-first-book.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-mobile-first.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-mobile-01.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-mobile-02.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-mobile-03.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-content-over.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-mobile-performance.jpg" data-background-size="auto 100%">
+                </section>
+                <section data-background="images/rwd-lose-user.png" data-background-size="100% auto">
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Design Patterns</h2>
+                </section>
+                <section data-background="images/rwd-mostly-fluid.png" data-background-size="100% auto">
+                    <a href="http://googlesamples.github.io/web-fundamentals/samples/layouts/rwd-patterns/mostly-fluid.html" target="_blank">Mostly Fluid</a>
+                </section>
+                <section data-background="images/rwd-mf-sample1.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-mf-sample2.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-mf-sample3.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-column-drop.png" data-background-size="100% auto">
+                    <a href="http://googlesamples.github.io/web-fundamentals/samples/layouts/rwd-patterns/column-drop.html" target="_blank">Column Drop</a>
+                </section>
+                <section data-background="images/rwd-cd-sample1.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-cd-sample2.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-cd-sample3.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-layout-shifter.png" data-background-size="100% auto">
+                    <a href="http://googlesamples.github.io/web-fundamentals/samples/layouts/rwd-patterns/layout-shifter.html" target="_blank">Layout Shifter</a>
+                </section>
+                <section data-background="images/rwd-ls-sample1.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-ls-sample2.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-ls-sample3.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-tiny-tweaks.png" data-background-size="100% auto">
+                    <a href="http://googlesamples.github.io/web-fundamentals/samples/layouts/rwd-patterns/tiny-tweaks.html" target="_blank">Tiny Tweaks</a>
+                </section>
+                <section data-background="images/rwd-tt-sample1.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-tt-sample2.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-off-canvas.png" data-background-size="100% auto">
+                    <a href="http://googlesamples.github.io/web-fundamentals/samples/layouts/rwd-patterns/off-canvas.html" target="_blank">Off Canvas</a>
+                </section>
+                <section data-background="images/rwd-oc-sample1.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-oc-sample2.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-oc-sample3.png" data-background-size="auto 100%">
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Technique</h2>
+                </section>
+                <section>
+                    <h3>Viewport</h3>
+                    <pre><code>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0" /> 
+                    </code></pre>
+                </section>
+                <section data-background="images/rwd-viewport.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-mostly-fluid.png" data-background-size="100% auto">
+                    <a href="http://googlesamples.github.io/web-fundamentals/samples/layouts/rwd-patterns/mostly-fluid.html" target="_blank">Mostly Fluid</a>
+                </section>
+                <section>
+                    <h3>Mostly Fluid</h3>
+                    <pre><code>
+                .c1, .c2, .c3, .c4, .c5 {
+                  width: 100%;
+                }
+
+                @media (min-width: 600px) {
+                  .c2, .c3, .c4, .c5 {
+                    width: 50%;
+                  }
+                }
+
+                @media (min-width: 800px) {
+                  .c1 {
+                    width: 60%;
+                  }
+                  .c2 {
+                    width: 40%;
+                  }
+                  .c3, .c4, .c5 {
+                    width: 33.33%;
+                  }
+                }
+
+                @media (min-width: 800px) {
+                  .container {
+                    width: 800px;
+                    margin-left: auto;
+                    margin-right: auto;
+                  }
+                }
+                </code></pre>
+                </section>
+                <section data-background="images/rwd-column-drop.png" data-background-size="100% auto">
+                    <a href="http://googlesamples.github.io/web-fundamentals/samples/layouts/rwd-patterns/column-drop.html" target="_blank">Column Drop</a>
+                </section>
+                <section>
+                    <pre><code>
+                .c1, .c2, .c3 {
+                  width: 100%;
+                }
+
+                @media (min-width: 600px) {
+                  .c1 {
+                    width: 60%;
+                    -webkit-order: 2;
+                    order: 2;
+                  }
+
+                  .c2 {
+                    width: 40%;
+                    -webkit-order: 1;
+                    order: 1;
+                  }
+
+                  .c3 {
+                    width: 100%;
+                    -webkit-order: 3;
+                    order: 3;
+                  }
+                }
+
+
+                @media (min-width: 800px) {
+                  .c2 {
+                    width: 20%;
+                  }
+
+                  .c3 {
+                    width: 20%;
+                  }
+                }
+                </code></pre>
+                </section>
+                <section data-background="images/rwd-layout-shifter.png" data-background-size="100% auto">
+                    <a href="http://googlesamples.github.io/web-fundamentals/samples/layouts/rwd-patterns/layout-shifter.html" target="_blank">Layout Shifter</a>
+                </section>
+                <section>
+                    <pre><code>
+                .c1, .c2, .c3, .c4 {
+                  width: 100%;
+                }
+
+                @media (min-width: 600px) {
+                  .c1 {
+                    width: 25%;
+                  }
+
+                  .c4 {
+                    width: 75%;
+                  }
+
+                }
+
+                @media (min-width: 800px) {
+                  .container {
+                    width: 800px;
+                    margin-left: auto;
+                    margin-right: auto;
+                  }
+                }
+                    </code></pre>
+                </section>
+                <section data-background="images/rwd-tiny-tweaks.png" data-background-size="100% auto">
+                    <a href="http://googlesamples.github.io/web-fundamentals/samples/layouts/rwd-patterns/tiny-tweaks.html" target="_blank">Tiny Tweaks</a>
+                </section>
+                <section>
+                    <pre><code>
+                .c1 {
+                  padding: 10px;
+                  width: 100%;
+                }
+
+                @media (min-width: 500px) {
+                  .c1 {
+                    padding: 20px;
+                    font-size: 1.5em;
+                  }
+                }
+
+                @media (min-width: 800px) {
+                  .c1 {
+                    padding: 40px;
+                    font-size: 2em;
+                  }
+                }
+                </code></pre>
+                </section>
+                <section data-background="images/rwd-off-canvas.png" data-background-size="100% auto">
+                    <a href="http://googlesamples.github.io/web-fundamentals/samples/layouts/rwd-patterns/off-canvas.html" target="_blank">Off Canvas</a>
+                </section>
+                <section>
+                    <pre><code>
+                    body {
+                      overflow-x: hidden;
+                    }
+                    
+                    .container {
+                      display: block;
+                    }
+
+                    .c1, .c3 {
+                      position: absolute;
+                      width: 250px;
+                      height: 100%;
+                    
+                      /*
+                        This is a trick to improve performance on newer versions of Chrome
+                        #perfmatters
+                      */
+                      -webkit-backface-visibility: hidden;
+                      backface-visibility: hidden;
+
+                      -webkit-transition: -webkit-transform 0.4s ease-out;
+                      transition: transform 0.4s ease-out;
+                    
+                      z-index: 1;
+                    }
+
+                    .c1 {
+                      /*
+                      Using translate3d as a trick to improve performance on older versions of Chrome
+                      See: http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/
+                      #perfmatters
+                      */
+                      -webkit-transform: translate(-250px,0);
+                      transform: translate(-250px,0);
+                    }
+
+                    .c2 {
+                      width: 100%;
+                      position: absolute;
+                    }
+                    
+                    .c3 {
+                      left: 100%;
+                    }
+
+                    .c1.open {
+                      -webkit-transform: translate(0,0);
+                      transform: translate(0,0);
+                    }
+
+                    .c3.open {
+                      -webkit-transform: translate(-250px,0);
+                      transform: translate(-250px,0);
+                    }
+                    
+                    @media (min-width: 500px) {
+                      /* If the screen is wider then 500px, use Flexbox */
+                      .container {
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-flex-flow: row nowrap;
+                        flex-flow: row nowrap;
+                      }
+                      .c1 {
+                        position: relative;
+                        -webkit-transition: none 0s ease-out;
+                        transition: none 0s ease-out;
+                        -webkit-transform: translate(0,0);
+                        transform: translate(0,0);
+                      }
+                      .c2 {
+                        position: static;
+                      }
+                    }
+
+                    @media (min-width: 800px) {
+                      body {
+                        overflow-x: auto;
+                      }
+                      .c3 {
+                        position: relative;
+                        left: auto;
+                        -webkit-transition: none 0s ease-out;
+                        transition: none 0s ease-out;
+                        -webkit-transform: translate(0,0);
+                        transform: translate(0,0);
+                      }
+                    }
+                    </code></pre>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Framework</h2>
+                </section>
+                <section data-background="images/rwd-bootstrap.jpg" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-bootstrap-grid.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-foundation.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-foundation-grid.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-pure.png" data-background-size="100% auto">
+                </section>
+                <section>
+                    <h4>Pure's Regular Grid</h4>
+                    <pre><code>
+        <div class="pure-g">
+            <div class="pure-u-1-3"> ... </div>
+            <div class="pure-u-1-3"> ... </div>
+            <div class="pure-u-1-3"> ... </div>
+        </div>
+                    </code></pre>
+                </section>
+                <section>
+                    <h4>Pure's Responsive Grid</h4>
+                    <pre><code>
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-3"> ... </div>
+            <div class="pure-u-1 pure-u-md-1-3"> ... </div>
+            <div class="pure-u-1 pure-u-md-1-3"> ... </div>
+        </div>
+                    </code></pre>
+                </section>
+                <section data-background="images/rwd-dsp1.png" data-background-size="100% auto">
+                </section>
+                <section data-background="images/rwd-dsp2.png" data-background-size="auto 100%">
+                </section>
+                <section data-background="images/rwd-dsp3.png" data-background-size="auto 100%">
+                </section>
+                <section data-background="images/rwd-dsp4.png" data-background-size="auto 100%">
+                </section>
+            </section>
+
+            <section>
+                <h3>THE END</h3>
+                <p>
+                    <small><a href="mailto:muyunsong@qbao.com">Cloud Mu</a> / <a href="http://qbao.com">@QBao UED</a>
+                        </small>
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function() {
+                return !document.body.classList;
+            }
+        }, {
+            src: 'plugin/markdown/marked.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/markdown/markdown.js',
+            condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            }
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function() {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true,
+            condition: function() {
+                return !!document.body.classList;
+            }
+        }, {
+            src: 'plugin/notes/notes.js',
+            async: true,
+            condition: function() {
+                return !!document.body.classList;
+            }
+        }]
+    });
+    </script>
+
+</body>
+
+</html>
